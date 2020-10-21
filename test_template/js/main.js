@@ -1,5 +1,18 @@
 $(document).ready(function(){
 
+	$(document).on('click', '.navbar-nav>li>a[href^="#"]', function(e) {
+	    let id = $(this).attr('href');
+	    let $id = $(id);
+	    if ($id.length === 0) {
+	        return;
+	    }
+	    e.preventDefault();
+	    let pos = $id.offset().top;
+
+	    $('body, html').animate({scrollTop: pos});
+	});
+
+	
      
      $('.slick-slider').slick({
      	slidesToScroll: 1,
