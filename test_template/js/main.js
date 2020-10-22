@@ -1,8 +1,8 @@
 $(document).ready(function(){
-	setTimeout(function(){
-		$('.wrap-loader').hide();
-
-	 }, 3000);
+	
+	$( window ).load(function() {
+	  $('.wrap-loader').hide();
+	});
 
 
 	$(document).on('click', '.navbar-nav>li>a[href^="#"]', function(e) {
