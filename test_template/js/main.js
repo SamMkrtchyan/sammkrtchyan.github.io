@@ -1,4 +1,9 @@
 $(document).ready(function(){
+	setTimeout(function(){
+		$('.wrap-loader').hide();
+
+	 }, 3000);
+
 
 	$(document).on('click', '.navbar-nav>li>a[href^="#"]', function(e) {
 	    let id = $(this).attr('href');
