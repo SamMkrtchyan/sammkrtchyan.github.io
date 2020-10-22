@@ -847,3 +847,5 @@ a.tab-articl h3, .tabs_content h4 {
 		font-size: 60%;
 	}
 }
+
+.wrap-loader{z-index: 1000;}
